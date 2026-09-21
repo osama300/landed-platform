@@ -4,6 +4,7 @@ const token = (name) => `rgb(var(--c-${name}) / <alpha-value>)`;
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./index.html', './resource.html', './app/**/*.html', './src/**/*.{html,js}'],
+  safelist: [{ pattern: /^tint-/ }],
   theme: {
     extend: {
       colors: {

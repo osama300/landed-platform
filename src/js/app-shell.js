@@ -28,6 +28,7 @@ onAction({
   currency: (el) => { store.set({ currency: el.dataset.v }); syncCurrency(); emit(); },
   bell: () => { pop.hidden = !pop.hidden; },
   palette: openPalette,
+  menu: () => { const side = $('#side'), scrim = $('.side-scrim'); const open = side.classList.toggle('open'); scrim.hidden = !open; },
   'close-modal': closeModal,
   upgrade: () => toast('في النسخة الفعلية تنتقل هنا إلى صفحة اختيار الباقة والدفع.'),
 });

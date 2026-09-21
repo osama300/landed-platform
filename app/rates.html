@@ -1,23 +1,28 @@
 {{#> app-layout}}
-<main class="page">
-  <div class="ph">
-    <div><h1 id="rt-title">مقارنة الأسعار</h1><p id="rt-sub"></p></div>
-    <span class="pill brand"><svg class="ic sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>آخر تحديث للأسعار: قبل ساعة</span>
-  </div>
-
-  <section class="card qbar" id="qbar" aria-label="بحث الأسعار"></section>
-  <section class="card grid divide-line lg:grid-cols-3 lg:divide-x lg:divide-x-reverse" id="market" aria-label="مؤشرات السوق"></section>
-  <div id="alertbar"></div>
-
-  <div class="rates-layout">
-    <aside class="card filters" id="filters" aria-label="الفلاتر"></aside>
-    <section class="flex min-w-0 flex-col gap-3">
-      <div class="flex flex-wrap items-center justify-between gap-3" id="toolbar"></div>
-      <div class="flex flex-col gap-2.5" id="results"></div>
-      <p class="text-xs text-mute">الأسعار شاملة لكل الرسوم حتى تسليم الحاوية في الميناء. لا تشمل الجمارك وضريبة القيمة المضافة والتخليص. بيانات توضيحية.</p>
-    </section>
+<main>
+  <section class="tower" aria-label="بحث الأسعار">
+    <div class="tower-in">
+      <div class="tower-head">
+        <div><h1 id="rt-title">مقارنة الأسعار</h1><p class="tower-sub" id="rt-sub"></p></div>
+        <span class="tower-pill" id="rt-updated"></span>
+      </div>
+      <div class="tower-form" id="qbar"></div>
+      <div class="tower-stats" id="market" aria-label="مؤشرات السوق"></div>
+    </div>
+  </section>
+  <div class="rt-wrap">
+    <section class="reco" id="reco" aria-label="الترشيح الأفضل"></section>
+    <div class="rt-sticky"><div class="rt-sticky-in" id="sticky"></div></div>
+    <div class="rt-layout">
+      <aside class="rt-filters" id="filters" aria-label="الفلاتر"></aside>
+      <section class="min-w-0" aria-label="العروض">
+        <div class="ofr-list" id="results"></div>
+        <p class="mt-3 text-xs text-mute">الأسعار شاملة لكل الرسوم حتى تسليم الحاوية في الميناء. لا تشمل الجمارك وضريبة القيمة المضافة والتخليص. بيانات توضيحية.</p>
+      </section>
+    </div>
   </div>
 </main>
+<div class="rt-scrim" id="scrim" hidden></div>
 <div id="cmpbar"></div>
 <script type="module" src="/src/js/pages/rates.js"></script>
 {{/app-layout}}

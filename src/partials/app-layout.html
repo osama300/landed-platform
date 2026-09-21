@@ -4,7 +4,12 @@
 {{> head}}
 </head>
 <body data-page="{{page}}">
-{{> app-header}}
-{{> @partial-block}}
+<div class="shell">
+  {{> app-sidebar}}
+  <div class="shell-main">
+    {{> app-header}}
+    {{> @partial-block}}
+  </div>
+</div>
 </body>
 </html>

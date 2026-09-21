@@ -1,0 +1,16 @@
+<aside class="side" id="side" aria-label="القائمة الرئيسية">
+  <div class="side-head">
+    <a class="logo" href="{{base}}app/" aria-label="لاندد">{{> logo}}</a>
+    <button class="side-close" data-act="menu" aria-label="إغلاق القائمة" type="button"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  </div>
+  <nav class="side-nav" aria-label="التنقل">{{> app-nav-links}}</nav>
+  <div class="grow"></div>
+  <div class="planbox">
+    <b>تجربة مجانية</b>
+    <p>بقي 23 يوماً على باقة الرحلة كاملة.</p>
+    <div class="bar"><i style="width:23%"></i></div>
+    <button class="btn btn-accent btn-sm btn-block" data-act="upgrade" type="button">ترقية الباقة</button>
+  </div>
+  <a class="nl back" href="{{base}}"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h5v16h-5M10 8l-4 4 4 4M6 12h10"/></svg><span>الموقع الرئيسي</span></a>
+</aside>
+<div class="side-scrim" data-act="menu" hidden></div>

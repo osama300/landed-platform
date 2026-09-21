@@ -31,14 +31,14 @@ html { scroll-behavior: smooth; }
     linear-gradient(180deg, rgb(var(--c-nav) / .95) 0%, rgb(var(--c-nav) / .88) 48%, rgb(var(--c-navMid) / .9) 100%),
     url('/images/aerial-container-ship-top-view.jpg') center 40% / cover no-repeat, rgb(var(--c-nav)); }
 .lp-hero::before { content: ''; position: absolute; inset: 0; z-index: -1; background: url('/textures/corrugated.svg') repeat; opacity: .5; pointer-events: none; }
-.lp-hero__map { position: absolute; z-index: -1; inset-block-start: 40px; inset-inline-start: -6%; width: 118%; opacity: .9; pointer-events: none;
+.lp-hero__map { position: absolute; z-index: -1; inset-block-start: 56px; inset-inline-start: 0; width: 100%; opacity: .9; pointer-events: none;
   -webkit-mask-image: linear-gradient(to left, transparent 4%, #000 58%); mask-image: linear-gradient(to left, transparent 4%, #000 58%); }
 .lp-hero__map svg { width: 100%; height: auto; }
 .lp-hero__in { position: relative; }
 .lp-hero__copy { max-width: 42rem; }
 .lp-live { display: inline-flex; align-items: center; gap: 8px; font-size: 13.5px; font-weight: 500; color: rgb(255 255 255 / .82); padding: 5px 12px; border: 1px solid rgb(255 255 255 / .18); border-radius: 999px; background: rgb(255 255 255 / .06); }
 .lp-live .dot { color: rgb(var(--c-aqua)); }
-.lp-hero h1 { font-size: clamp(2.3rem, 5.2vw, 4.2rem); line-height: 1.22; font-weight: 600; letter-spacing: -.015em; margin-top: 22px; max-width: 13em; text-wrap: balance; }
+.lp-hero h1 { font-size: clamp(2.1rem, 4.6vw, 3.7rem); line-height: 1.24; font-weight: 600; letter-spacing: -.015em; margin-top: 22px; max-width: 17em; text-wrap: balance; }
 .lp-hero__lead { margin-top: 20px; font-size: 1.12rem; line-height: 2; color: rgb(255 255 255 / .78); max-width: 34rem; }
 .lp-assure { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-top: 20px; font-size: 13.5px; color: rgb(255 255 255 / .72); }
 .lp-assure li { display: inline-flex; align-items: center; gap: 7px; }
@@ -81,7 +81,7 @@ html { scroll-behavior: smooth; }
 .lp-chip b { display: block; font-size: 13.5px; }
 .lp-chip span.t { color: rgb(var(--c-mute)); font-size: 12px; }
 .lp-chip--a { inset-block-start: -28px; inset-inline-end: 44px; }
-.lp-chip--b { inset-block-start: 150px; inset-inline-start: -14px; }
+.lp-chip--b { inset-block-start: 132px; inset-inline-start: -26px; }
 @media (max-width: 900px) { .lp-chip--b { display: none; } .lp-chip--a { inset-inline-end: 12px; } }
 
 /* orchestrated load: hero only */
@@ -99,7 +99,7 @@ html { scroll-behavior: smooth; }
 /* ---------- carriers ---------- */
 .lp-carriers { background: rgb(var(--c-bg)); padding: 34px 0 38px; border-bottom: 1px solid rgb(var(--c-line)); }
 .lp-carriers__line { max-width: 44rem; font-size: 14.5px; line-height: 1.9; color: rgb(var(--c-ink2)); }
-.lp-wordmarks { display: flex; flex-wrap: wrap; gap: 10px 38px; margin-top: 18px; font-family: 'Readex Pro', sans-serif; font-size: clamp(1.15rem, 2.4vw, 1.7rem); font-weight: 700; letter-spacing: .02em; color: rgb(var(--c-ink) / .45); direction: ltr; justify-content: flex-end; }
+.lp-wordmarks { display: flex; flex-wrap: wrap; gap: 8px 30px; margin-top: 18px; font-family: 'Readex Pro', sans-serif; font-size: clamp(1rem, 2vw, 1.45rem); font-weight: 700; letter-spacing: .02em; color: rgb(var(--c-ink) / .45); direction: ltr; justify-content: flex-end; }
 
 /* ---------- sections ---------- */
 .lp-sec { padding-block: 92px; }
@@ -367,3 +367,15 @@ html { scroll-behavior: smooth; }
   .lp-map .lane { animation: none; }
   html { scroll-behavior: auto; }
 }
+
+/* price breakdown inside the rates bento cell */
+.lp-bd { margin-top: auto; padding-top: 20px; border-top: 1px solid rgb(var(--c-line)); }
+.lp-bd h4 { font-size: 14px; font-weight: 600; margin-bottom: 12px; }
+.lp-bd__bar { display: flex; gap: 2px; height: 12px; border-radius: 99px; overflow: hidden; }
+.lp-bd__bar i { display: block; min-width: 4px; }
+.lp-bd__list { display: grid; grid-template-columns: 1fr 1fr; gap: 0 32px; margin-top: 14px; }
+.lp-bd__list li { display: grid; grid-template-columns: 12px 1fr auto; gap: 10px; align-items: center; padding: 7px 0; border-top: 1px solid rgb(var(--c-line)); font-size: 13.5px; }
+.lp-bd__list b { font-weight: 600; font-variant-numeric: tabular-nums; }
+.lp-bd__sw { width: 10px; height: 10px; border-radius: 3px; }
+.lp-bd__tot { font-weight: 700; }
+@media (max-width: 640px) { .lp-bd__list { grid-template-columns: 1fr; } }

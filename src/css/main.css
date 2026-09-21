@@ -69,7 +69,7 @@
   }
   .input { @apply min-h-[42px] w-full rounded-md border border-line-2 bg-surface px-3 text-[14px] hover:border-brand focus:border-brand focus:outline-none focus:ring-2 focus:ring-brand/20; }
   .tgl { @apply relative h-6 w-11 shrink-0 rounded-full bg-line-2 transition-colors; }
-  .tgl::after { content: ''; @apply absolute end-[3px] top-[3px] h-[18px] w-[18px] rounded-full bg-white shadow transition-transform; }
+  .tgl::after { content: ''; @apply absolute start-[3px] top-[3px] h-[18px] w-[18px] rounded-full bg-white shadow transition-transform; }
   .tgl[aria-checked='true'] { @apply bg-brand; }
   .tgl[aria-checked='true']::after { transform: translateX(-20px); }
   .check { @apply h-[18px] w-[18px] cursor-pointer accent-[rgb(var(--c-brand))]; }
