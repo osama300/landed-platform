@@ -1,0 +1,7 @@
+{
+  "a1": { "name": "بحر الخليج للشحن",   "color": "#0B6E75", "city": "جدة",      "rating": 4.8, "shipments": 1240, "verified": true,  "response": "15 د" },
+  "a2": { "name": "الأفق اللوجستية",    "color": "#35507A", "city": "الرياض",   "rating": 4.6, "shipments": 860,  "verified": true,  "response": "30 د" },
+  "a3": { "name": "نجم الشرق",          "color": "#B7791F", "city": "شنجن",     "rating": 4.7, "shipments": 1510, "verified": true,  "response": "10 د" },
+  "a4": { "name": "رواد التصدير",       "color": "#7C5A99", "city": "قوانغتشو", "rating": 4.4, "shipments": 420,  "verified": true,  "response": "1 س" },
+  "a5": { "name": "موج الأحمر",         "color": "#C2362F", "city": "جدة",      "rating": 4.2, "shipments": 95,   "verified": false, "response": "2 س" }
+}

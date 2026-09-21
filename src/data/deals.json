@@ -1,0 +1,7 @@
+[
+  { "id": "d1", "from": "shenzhen",  "to": "jeddah", "box": "40", "carrier": "MSC",       "vessel": "MSC Pearl Horizon", "agent": "a1", "sailIn": 2, "closesInHours": 52,  "left": 6, "of": 100, "marketPrice": 2960, "dealPrice": 2440 },
+  { "id": "d2", "from": "ningbo",    "to": "jeddah", "box": "20", "carrier": "COSCO",     "vessel": "Cosco Harmony",     "agent": "a3", "sailIn": 3, "closesInHours": 71,  "left": 4, "of": 60,  "marketPrice": 1720, "dealPrice": 1390 },
+  { "id": "d3", "from": "shanghai",  "to": "dammam", "box": "40", "carrier": "CMA CGM",   "vessel": "CMA Bosphorus",     "agent": "a2", "sailIn": 4, "closesInHours": 20,  "left": 2, "of": 80,  "marketPrice": 3610, "dealPrice": 3020 },
+  { "id": "d4", "from": "guangzhou", "to": "jeddah", "box": "40", "carrier": "ONE",       "vessel": "ONE Continuity",    "agent": "a4", "sailIn": 6, "closesInHours": 118, "left": 9, "of": 120, "marketPrice": 2890, "dealPrice": 2380 },
+  { "id": "d5", "from": "qingdao",   "to": "jeddah", "box": "40", "carrier": "EVERGREEN", "vessel": "Ever Gentle",       "agent": "a5", "sailIn": 8, "closesInHours": 141, "left": 5, "of": 90,  "marketPrice": 3170, "dealPrice": 2610 }
+]

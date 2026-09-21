@@ -1,0 +1,13 @@
+{
+  "origins": {
+    "shenzhen":  { "name": "شنجن (يانتيان)",    "short": "شنجن",     "code": "CNYTN", "priceDelta": 0,   "extraDays": 0, "lon": 114.27, "lat": 22.55 },
+    "guangzhou": { "name": "قوانغتشو (نانشا)",  "short": "قوانغتشو", "code": "CNNSA", "priceDelta": -40, "extraDays": 1, "lon": 113.6,  "lat": 22.7 },
+    "shanghai":  { "name": "شنغهاي (يانغشان)",  "short": "شنغهاي",   "code": "CNSHA", "priceDelta": 40,  "extraDays": 2, "lon": 122.1,  "lat": 30.6 },
+    "ningbo":    { "name": "نينغبو",            "short": "نينغبو",   "code": "CNNGB", "priceDelta": 60,  "extraDays": 2, "lon": 121.9,  "lat": 29.9 },
+    "qingdao":   { "name": "تشينغداو",          "short": "تشينغداو", "code": "CNTAO", "priceDelta": 120, "extraDays": 4, "lon": 120.4,  "lat": 36.1 }
+  },
+  "destinations": {
+    "jeddah": { "name": "جدة الإسلامي",             "short": "جدة",    "code": "SAJED", "landFee": 0,   "extraDays": 0, "lon": 39.15, "lat": 21.5 },
+    "dammam": { "name": "الدمام (الملك عبدالعزيز)", "short": "الدمام", "code": "SADMM", "landFee": 620, "extraDays": 9, "lon": 50.1,  "lat": 26.45 }
+  }
+}

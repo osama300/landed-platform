@@ -1,0 +1,21 @@
+{{#> app-layout}}
+<main class="page">
+  <div class="ph">
+    <div><h1 id="hello">مرحباً، محمد</h1><p id="hello-sub"></p></div>
+    <div class="flex flex-wrap gap-2.5"><a class="btn btn-line" href="{{base}}app/deals.html">صفقات المساحات</a><a class="btn btn-primary" href="{{base}}app/rates.html">احصل على سعر شحنة</a></div>
+  </div>
+  <section class="card grid grid-cols-2 divide-line lg:grid-cols-5 lg:divide-x lg:divide-x-reverse" id="stats"></section>
+  <div class="grid items-start gap-4 lg:grid-cols-[minmax(0,1.7fr)_minmax(0,1fr)]">
+    <div class="flex min-w-0 flex-col gap-4">
+      <section class="card" id="ships"></section>
+      <section class="card" id="trend"></section>
+    </div>
+    <div class="flex min-w-0 flex-col gap-4">
+      <section class="card" id="attention"></section>
+      <section class="card" id="mini-deals"></section>
+      <section class="card" id="watch"></section>
+    </div>
+  </div>
+</main>
+<script type="module" src="/src/js/pages/overview.js"></script>
+{{/app-layout}}

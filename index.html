@@ -1,0 +1,163 @@
+{{#> site-layout}}
+<main id="top">
+
+  <!-- 1. Hero -->
+  <section class="lp-hero" id="hero">
+    <div class="lp-hero__map" id="hero-map" aria-hidden="true"></div>
+    <div class="lp-wrap lp-hero__in">
+      <div class="lp-hero__copy">
+        <p class="lp-live" data-in style="--i:0"><span class="dot live"></span>أسعار الوكلاء الشركاء تتحدّث كل 3 أيام تقريباً</p>
+        <h1 data-in style="--i:1">اعرف كم ستدفع فعلاً قبل أن تحجز حاويتك من الصين.</h1>
+        <p class="lp-hero__lead" data-in style="--i:2">أسعار شحن بحري شاملة من وكلاء موثوقين إلى جدة والدمام، وتنبيه قبل أن تخسر مساحة مخفضة أو أياماً مجانية، وكل حاوياتك على خريطة واحدة.</p>
+        <form class="lp-search" id="hero-search" data-in style="--i:3" aria-label="بحث سريع عن سعر"></form>
+        <ul class="lp-assure" data-in style="--i:4">
+          <li>شهر مجاني بدون بطاقة</li>
+          <li>سعر شامل بلا رسوم مخفية</li>
+          <li>شحن بحري، والجوي لاحقاً</li>
+        </ul>
+      </div>
+    </div>
+    <div class="lp-wrap lp-hero__frame" data-in style="--i:5">
+      <div class="lp-frame" id="hero-frame"></div>
+      <div class="lp-chip lp-chip--a" id="chip-a"></div>
+      <div class="lp-chip lp-chip--b" id="chip-b"></div>
+    </div>
+  </section>
+
+  <!-- 2. Carriers -->
+  <section class="lp-carriers">
+    <div class="lp-wrap">
+      <p class="lp-carriers__line">نتتبع حاويات الخطوط التي تنقل نحو 75% من تجارة الحاويات العالمية عبر معيار DCSA، ونضيف COSCO وOOCL عبر مزودين صينيين.</p>
+      <ul class="lp-wordmarks" aria-label="الخطوط الملاحية المدعومة">
+        <li>MSC</li><li>MAERSK</li><li>CMA CGM</li><li>COSCO</li><li>HAPAG-LLOYD</li><li>ONE</li><li>EVERGREEN</li><li>OOCL</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 3. Journey -->
+  <section class="lp-sec" id="journey">
+    <div class="lp-wrap">
+      <div class="lp-head">
+        <h2>في كل مرحلة من رحلة الحاوية يوجد مبلغ يتسرّب</h2>
+        <p>رحلة الحاوية من طلب السعر إلى الاستلام تستغرق 90 إلى 100 يوم. في عام 2026 صار المسار نفسه مجهولاً: ازدحام في جدة، وقيود على مضيق هرمز تؤثر في الدمام، ورسوم تظهر بعد الحجز. هذا ما نغلقه في كل مرحلة.</p>
+      </div>
+      <ol class="lp-journey" id="journey-list"></ol>
+    </div>
+  </section>
+
+  <!-- 4. Capabilities bento -->
+  <section class="lp-sec lp-sec--tint" id="capabilities">
+    <div class="lp-wrap">
+      <div class="lp-head">
+        <h2>ست أدوات في لوحة واحدة</h2>
+        <p>كل ما يحتاجه المستورد الصغير والمتوسط من الصين إلى السعودية، دون العودة إلى محادثات واتساب المتفرقة.</p>
+      </div>
+      <div class="lp-bento" id="bento"></div>
+    </div>
+  </section>
+
+  <!-- 5. Product tour -->
+  <section class="lp-sec" id="tour">
+    <div class="lp-wrap">
+      <div class="lp-head">
+        <h2>جرّب المنتج هنا قبل أن تسجّل</h2>
+        <p>غيّر المسار ونوع الحاوية وشاهد العروض تتبدّل. البيانات توضيحية، والمكوّنات هي نفسها التي ستراها داخل المنصة.</p>
+      </div>
+      <div class="lp-tour">
+        <div class="lp-tabs" role="tablist" aria-label="أقسام المنتج">
+          <button role="tab" id="tab-rates" aria-controls="panel" aria-selected="true" data-act="tab" data-v="rates">الأسعار</button>
+          <button role="tab" id="tab-deals" aria-controls="panel" aria-selected="false" data-act="tab" data-v="deals">الصفقات</button>
+          <button role="tab" id="tab-track" aria-controls="panel" aria-selected="false" data-act="tab" data-v="track">التتبع</button>
+        </div>
+        <div class="lp-panel" id="panel" role="tabpanel" aria-labelledby="tab-rates"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Lanes -->
+  <section class="lp-sec lp-sec--tight">
+    <div class="lp-wrap">
+      <div class="lp-head">
+        <h2>مساران إلى السعودية، وضعان مختلفان</h2>
+        <p>جدة تستقبل معظم الخطوط مباشرة لكنها مزدحمة. الدمام تتأثر بقيود مضيق هرمز، فتصل حاويتك غالباً عبر جدة ثم برّاً. نوضح لك الفرق في السعر والمدة قبل الحجز.</p>
+      </div>
+      <div class="lp-lanes" id="lanes"></div>
+    </div>
+  </section>
+
+  <!-- 7. Data sources -->
+  <section class="lp-data" id="sources">
+    <div class="lp-wrap">
+      <div class="lp-head lp-head--light">
+        <h2>نعتمد على المصادر الأصلية، ولكل نوع بيانات مصدران على الأقل</h2>
+        <p>لا نبني على مواقع وسيطة. أنظمتنا الداخلية مبنية على معيار DCSA حتى يسهل استبدال أي مزود دون أن تتأثر أنت.</p>
+      </div>
+      <div class="lp-src" id="src-table" role="table" aria-label="مصادر البيانات"></div>
+      <p class="mt-5"><a class="btn btn-accent btn-sm" href="{{base}}resource.html">كل المصادر بالتفصيل</a></p>
+    </div>
+  </section>
+
+  <!-- 8. Savings ledger -->
+  <section class="lp-sec" id="savings">
+    <div class="lp-wrap lp-split">
+      <div class="lp-head lp-head--flush">
+        <h2>ما الذي توفّره حاوية واحدة؟</h2>
+        <p>مثال مبني على بيانات العرض في هذه الصفحة: حاوية 40 قدم من شنجن إلى جدة، اخترتها من المقارنة بدل أول رقم وصلك على واتساب، وحجزت مساحة مخفضة، وبدأت التخليص عند التنبيه.</p>
+        <p class="lp-note">الأرقام توضيحية ولا تمثل وعداً بالتوفير.</p>
+      </div>
+      <div id="ledger"></div>
+    </div>
+  </section>
+
+  <!-- 9. Pricing -->
+  <section class="lp-sec lp-sec--tint" id="pricing">
+    <div class="lp-wrap">
+      <div class="lp-head">
+        <h2>اشتراك بطول رحلة الشحن لا بالشهر</h2>
+        <p>الحاوية البحرية تحتاج 90 إلى 100 يوم من الطلب إلى الاستلام، لذلك تدفع مرة واحدة عن الرحلة كاملة.</p>
+      </div>
+      <div class="lp-found" id="founding"></div>
+      <div class="lp-plans" id="plans"></div>
+      <p class="lp-note">شهر تجربة مجاني على باقة الرحلة كاملة بدون بطاقة. الأسعار تقديرية في هذا النموذج.</p>
+    </div>
+  </section>
+
+  <!-- 10. Agents -->
+  <section class="lp-agents" id="partners">
+    <div class="lp-wrap lp-agents__in">
+      <div class="lp-agents__copy">
+        <h2>وكيل شحن؟ اعرض أسعارك ومساحاتك على مستوردين جاهزين</h2>
+        <p>لا رسوم اشتراك عليك. تنشر جداول أسعارك الشاملة ومساحاتك الفارغة، وتصلك طلبات من مستوردين يعرفون ما يريدون، وتحصل على صفحة خاصة بشركتك.</p>
+        <ul>
+          <li>لوحة لرفع جداول الأسعار وتحديثها كل بضعة أيام</li>
+          <li>بيع المساحات الفارغة قبل الإبحار بأيام</li>
+          <li>تقييم مبني على مطابقة الفاتورة النهائية لعرض السعر</li>
+        </ul>
+        <button class="btn btn-accent" data-act="partner">سجّل اهتمامك كوكيل</button>
+      </div>
+      <div class="lp-agents__img" role="img" aria-label="حاويات مرصوصة على سطح سفينة"></div>
+    </div>
+  </section>
+
+  <!-- 11. FAQ -->
+  <section class="lp-sec" id="faq">
+    <div class="lp-wrap lp-split lp-split--faq">
+      <div class="lp-head lp-head--flush"><h2>أسئلة يسألها المستوردون</h2><p>لم تجد إجابتك؟ اضغط «اطلب هذا السعر» على أي عرض ويجيبك فريقنا على واتساب.</p></div>
+      <div class="lp-faq" id="faq-list"></div>
+    </div>
+  </section>
+
+  <!-- 12. Final CTA -->
+  <section class="lp-cta">
+    <div class="lp-wrap lp-cta__in">
+      <h2>شحنتك القادمة، اجعلها أوضح.</h2>
+      <p>ابدأ شهراً مجانياً على باقة الرحلة كاملة، بدون بطاقة.</p>
+      <div class="lp-cta__btns">
+        <a class="btn btn-accent btn-lg" href="{{base}}app/">جرّب المنصة الآن</a>
+        <a class="lp-btn lp-btn--ghost lp-btn--lg" href="{{base}}app/rates.html">قارن الأسعار</a>
+      </div>
+    </div>
+  </section>
+</main>
+<script type="module" src="/src/js/pages/landing.js"></script>
+{{/site-layout}}

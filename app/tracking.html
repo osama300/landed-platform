@@ -1,0 +1,13 @@
+{{#> app-layout}}
+<main class="page">
+  <div class="ph"><div><h1>حاوياتك على الخريطة</h1><p>تحديث الأحداث كل 6 إلى 12 ساعة</p></div></div>
+  <section class="card grid grid-cols-2 divide-line lg:grid-cols-4 lg:divide-x lg:divide-x-reverse" id="tstats"></section>
+  <section class="map-stage map-dark" aria-label="خريطة الشحنات">
+    <div class="map-list" id="tlist"></div>
+    <div class="mapc"><div class="map-scroll" id="tmap"></div>
+      <div class="mapleg"><span><i></i>مسار الحاوية المحددة</span><span><i class="d"></i>نقل بري للدمام</span><span class="text-bad"><span class="dot"></span>ممر مقيّد</span></div></div>
+  </section>
+  <section class="card overflow-hidden" id="tdetail"></section>
+</main>
+<script type="module" src="/src/js/pages/tracking.js"></script>
+{{/app-layout}}

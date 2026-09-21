@@ -1,0 +1,74 @@
+/* App shell: navy header, command palette, dark map stage, deals band. Loaded after main.css. */
+.topbar { background: rgb(var(--c-nav)); border-bottom: 1px solid rgb(255 255 255 / .07); backdrop-filter: none; }
+.topbar .logo { color: #fff; }
+.topbar .logo small { color: rgb(var(--c-navMute)); }
+.navlinks a { color: rgb(var(--c-navInk)); }
+.navlinks a:hover { background: rgb(255 255 255 / .08); color: #fff; }
+.navlinks a[aria-current='page'] { color: #fff; }
+.navlinks a[aria-current='page']::after { background: rgb(var(--c-aqua)); box-shadow: 0 0 12px rgb(var(--c-aqua) / .8); }
+.navlinks .bdg { background: rgb(255 255 255 / .14); color: #fff; }
+.navlinks .bdg.hot { background: rgb(var(--c-crane)); color: #241a00; }
+.navlinks .bdg.red { background: rgb(var(--c-bad)); color: #fff; }
+.topbar .seg { background: rgb(255 255 255 / .08); }
+.topbar .seg button { color: rgb(var(--c-navInk)); }
+.topbar .seg button[aria-pressed='true'] { background: rgb(255 255 255 / .18); color: #fff; box-shadow: none; }
+.topbar .iconbtn { background: rgb(255 255 255 / .06); border-color: rgb(255 255 255 / .14); color: rgb(var(--c-navInk)); }
+.topbar .iconbtn:hover { border-color: rgb(var(--c-aqua)); color: #fff; }
+.topbar .iconbtn .bd { border-color: rgb(var(--c-nav)); }
+.subnav { background: rgb(var(--c-nav2)); border-bottom: 0; }
+.subnav a { color: rgb(var(--c-navInk)); }
+.subnav a[aria-current='page'] { color: #fff; border-color: rgb(var(--c-aqua)); }
+.pop { color: rgb(var(--c-ink)); }
+
+.cmdk-trigger { align-items: center; gap: 10px; width: 270px; height: 36px; padding: 0 12px; border-radius: 8px; border: 1px solid rgb(255 255 255 / .14); background: rgb(255 255 255 / .06); color: rgb(var(--c-navMute)); font-size: 13px; }
+.cmdk-trigger:hover { border-color: rgb(var(--c-aqua)); color: #fff; }
+.cmdk-trigger span { flex: 1; text-align: start; }
+kbd { font: 600 11px var(--font-mono, ui-monospace); padding: 1px 6px; border-radius: 5px; border: 1px solid rgb(255 255 255 / .2); color: rgb(var(--c-navInk)); direction: ltr; }
+
+/* command palette */
+.cmdk { width: 100%; max-width: 560px; align-self: start; margin-top: 12vh; background: rgb(var(--c-surface)); border-radius: 14px; box-shadow: var(--tw-shadow, 0 30px 70px -28px rgb(0 0 0 / .6)); overflow: hidden; }
+.cmdk input { width: 100%; height: 54px; padding: 0 18px; border: 0; border-bottom: 1px solid rgb(var(--c-line)); background: transparent; font-size: 16px; outline: 0; }
+.cmdk ul { max-height: 340px; overflow-y: auto; padding: 6px; }
+.cmdk .grp { padding: 8px 12px 4px; font-size: 12px; font-weight: 600; color: rgb(var(--c-mute)); }
+.cmdk li button { display: flex; width: 100%; align-items: center; gap: 12px; padding: 9px 12px; border: 0; border-radius: 8px; background: none; text-align: start; }
+.cmdk li button small { display: block; font-size: 12px; color: rgb(var(--c-mute)); }
+.cmdk li button[aria-selected='true'] { background: rgb(var(--c-brandSoft)); }
+.cmdk .foot { display: flex; gap: 16px; padding: 9px 14px; border-top: 1px solid rgb(var(--c-line)); font-size: 12px; color: rgb(var(--c-mute)); }
+.ovl:has(.cmdk) { align-items: start; }
+
+/* tracking: dark map stage with floating shipment list */
+.map-dark { --c-sea: 6 24 42; --c-land: 14 44 71; --c-landLine: 27 74 106; --c-sa: 15 70 96; --c-grat: 14 40 64; --c-ink: 224 238 246; --c-mute: 130 165 186; --c-brand: 23 179 184; --c-surface: 9 32 54; --c-nav: 6 24 42; --c-line: 27 62 90; }
+.map-stage { position: relative; overflow: hidden; border-radius: 14px; background: rgb(6 24 42); box-shadow: 0 24px 60px -30px rgb(6 24 42 / .8); }
+.map-stage .map-scroll svg { min-width: 900px; }
+.map-stage::before { content: ''; position: absolute; inset: 0; background: url('/textures/corrugated.svg') repeat; opacity: .5; pointer-events: none; }
+.map-list { position: absolute; inset-block: 14px; inset-inline-start: 14px; width: 310px; display: flex; flex-direction: column; overflow: hidden; border-radius: 12px; background: rgb(6 24 42 / .88); border: 1px solid rgb(255 255 255 / .1); backdrop-filter: blur(10px); color: #fff; }
+.map-list .clist { max-height: none; min-height: 0; flex: 1; }
+.map-list .ci { border-color: rgb(255 255 255 / .08); color: #fff; }
+.map-list .ci:hover { background: rgb(255 255 255 / .06); }
+.map-list .ci[aria-current='true'] { background: rgb(23 179 184 / .18); }
+.map-list .ci .t2 { color: rgb(var(--c-navMute)); }
+.map-list .prog { background: rgb(255 255 255 / .12); }
+.map-list .prog i { background: rgb(var(--c-aqua)); }
+.map-list .input { background: rgb(255 255 255 / .06); border-color: rgb(255 255 255 / .16); color: #fff; }
+.map-list .chip { background: transparent; border-color: rgb(255 255 255 / .18); color: rgb(var(--c-navInk)); }
+.map-list .chip[aria-pressed='true'] { background: rgb(var(--c-aqua)); border-color: transparent; color: #04202e; }
+.map-stage .mapleg { background: rgb(6 24 42 / .88); border-color: rgb(255 255 255 / .1); color: #fff; inset-inline-start: auto; inset-inline-end: 14px; }
+.map-stage .mapleg span { color: rgb(var(--c-navInk)); }
+.map-stage .mapc { background: transparent; }
+@media (max-width: 1000px) {
+  .map-list { position: static; width: auto; inset: auto; border-radius: 0; border-inline: 0; }
+  .map-list .clist { max-height: 300px; }
+}
+
+/* deals band */
+.dealband { position: relative; overflow: hidden; border-radius: 14px; padding: 26px 28px; color: #fff; background: linear-gradient(120deg, rgb(6 24 42), rgb(14 44 71)); }
+.dealband::before { content: ''; position: absolute; inset: 0; background: url('/textures/corrugated.svg') repeat; opacity: .6; }
+.dealband > * { position: relative; }
+.dealband h1 { font-size: 26px; font-weight: 700; }
+.dealband p { color: rgb(var(--c-navMute)); margin-top: 4px; }
+.dealband .fig { display: flex; flex-direction: column; gap: 2px; }
+.dealband .fig b { font-size: 30px; font-weight: 700; line-height: 1.1; }
+.dealband .fig small { font-size: 12.5px; color: rgb(var(--c-navMute)); }
+@media (min-width: 1001px) {
+  .map-stage .mapc { margin-inline-start: 340px; }
+}

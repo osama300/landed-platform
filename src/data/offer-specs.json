@@ -1,0 +1,8 @@
+[
+  { "agent": "a1", "carrier": "MSC",       "service": "مباشر",         "direct": true,  "days": 21, "freeDays": 7,  "freight": 2050, "baf": 180, "peak": 150, "war": 120, "thc": 95,  "docs": 35, "dthc": 180, "sailIn": 3, "updatedHoursAgo": 2,  "weeklyChange": -2.1 },
+  { "agent": "a3", "carrier": "COSCO",     "service": "مباشر",         "direct": true,  "days": 23, "freeDays": 10, "freight": 1980, "baf": 190, "peak": 150, "war": 130, "thc": 90,  "docs": 30, "dthc": 175, "sailIn": 5, "updatedHoursAgo": 5,  "weeklyChange": 1.4 },
+  { "agent": "a2", "carrier": "CMA CGM",   "service": "مباشر سريع",    "direct": true,  "days": 19, "freeDays": 7,  "freight": 2240, "baf": 175, "peak": 150, "war": 110, "thc": 100, "docs": 40, "dthc": 185, "sailIn": 2, "updatedHoursAgo": 1,  "weeklyChange": 3.8 },
+  { "agent": "a4", "carrier": "ONE",       "service": "عبر سنغافورة",  "direct": false, "days": 27, "freeDays": 14, "freight": 1890, "baf": 185, "peak": 140, "war": 120, "thc": 90,  "docs": 30, "dthc": 175, "sailIn": 7, "updatedHoursAgo": 26, "weeklyChange": -0.6 },
+  { "agent": "a5", "carrier": "EVERGREEN", "service": "عبر كولومبو",   "direct": false, "days": 24, "freeDays": 14, "freight": 2100, "baf": 180, "peak": 150, "war": 120, "thc": 95,  "docs": 35, "dthc": 180, "sailIn": 4, "updatedHoursAgo": 8,  "weeklyChange": 0 },
+  { "agent": "a1", "carrier": "MAERSK",    "service": "مباشر",         "direct": true,  "days": 20, "freeDays": 10, "freight": 2320, "baf": 170, "peak": 150, "war": 115, "thc": 100, "docs": 35, "dthc": 190, "sailIn": 6, "updatedHoursAgo": 3,  "weeklyChange": 2.2 }
+]

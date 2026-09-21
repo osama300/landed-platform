@@ -1,0 +1,10 @@
+[
+  { "key": "freight", "label": "أجرة الشحن الأساسية",          "color": "s1" },
+  { "key": "baf",     "label": "رسوم الوقود (BAF)",            "color": "s2" },
+  { "key": "peak",    "label": "رسوم الموسم (PSS)",            "color": "s3" },
+  { "key": "war",     "label": "رسوم مخاطر الحرب",             "color": "s4" },
+  { "key": "thc",     "label": "مناولة الميناء الصيني (THC)",  "color": "s5" },
+  { "key": "docs",    "label": "رسوم المستندات",               "color": "s6" },
+  { "key": "dthc",    "label": "مناولة ميناء الوصول",          "color": "s7" },
+  { "key": "land",    "label": "النقل البري جدة ← الدمام",     "color": "s8" }
+]

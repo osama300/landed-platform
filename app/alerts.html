@@ -1,0 +1,13 @@
+{{#> app-layout}}
+<main class="page">
+  <div class="ph">
+    <div><h1>قواعد التنبيه</h1><p>اختر ما يهمك ونراسلك في الوقت المناسب.</p></div>
+    <button class="btn btn-primary" data-act="add-rule"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>تنبيه جديد</button>
+  </div>
+  <div class="grid items-start gap-4 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)]">
+    <section class="card" id="rules"></section>
+    <section class="card" id="feed"></section>
+  </div>
+</main>
+<script type="module" src="/src/js/pages/alerts.js"></script>
+{{/app-layout}}

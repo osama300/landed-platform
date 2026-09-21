@@ -1,0 +1,23 @@
+{{#> app-layout}}
+<main class="page">
+  <div class="ph">
+    <div><h1 id="rt-title">مقارنة الأسعار</h1><p id="rt-sub"></p></div>
+    <span class="pill brand"><svg class="ic sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>آخر تحديث للأسعار: قبل ساعة</span>
+  </div>
+
+  <section class="card qbar" id="qbar" aria-label="بحث الأسعار"></section>
+  <section class="card grid divide-line lg:grid-cols-3 lg:divide-x lg:divide-x-reverse" id="market" aria-label="مؤشرات السوق"></section>
+  <div id="alertbar"></div>
+
+  <div class="rates-layout">
+    <aside class="card filters" id="filters" aria-label="الفلاتر"></aside>
+    <section class="flex min-w-0 flex-col gap-3">
+      <div class="flex flex-wrap items-center justify-between gap-3" id="toolbar"></div>
+      <div class="flex flex-col gap-2.5" id="results"></div>
+      <p class="text-xs text-mute">الأسعار شاملة لكل الرسوم حتى تسليم الحاوية في الميناء. لا تشمل الجمارك وضريبة القيمة المضافة والتخليص. بيانات توضيحية.</p>
+    </section>
+  </div>
+</main>
+<div id="cmpbar"></div>
+<script type="module" src="/src/js/pages/rates.js"></script>
+{{/app-layout}}

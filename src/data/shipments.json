@@ -1,0 +1,8 @@
+[
+  { "id": "MSKU4821937", "carrier": "MSC",       "vessel": "MSC Aurora",    "from": "shenzhen",  "to": "jeddah", "box": "40", "progress": 0.955, "totalDays": 22, "status": "arriving", "freeDays": 7,  "daysInPort": 0 },
+  { "id": "CMAU7305518", "carrier": "CMA CGM",   "vessel": "CMA Concorde",  "from": "ningbo",    "to": "jeddah", "box": "40", "progress": 1,     "totalDays": 24, "status": "atport",   "freeDays": 7,  "daysInPort": 6 },
+  { "id": "CSNU6249115", "carrier": "COSCO",     "vessel": "Cosco Harmony", "from": "ningbo",    "to": "jeddah", "box": "40", "progress": 0.58,  "totalDays": 25, "status": "transit",  "freeDays": 10, "daysInPort": 0 },
+  { "id": "EGHU9034471", "carrier": "EVERGREEN", "vessel": "Ever Gentle",   "from": "shanghai",  "to": "dammam", "box": "20", "progress": 0.34,  "totalDays": 33, "status": "transit",  "freeDays": 14, "daysInPort": 0 },
+  { "id": "MAEU5518203", "carrier": "MAERSK",    "vessel": "Maersk Elba",   "from": "shenzhen",  "to": "jeddah", "box": "40", "progress": 0.12,  "totalDays": 21, "status": "transit",  "freeDays": 10, "daysInPort": 0 },
+  { "id": "TGHU6672908", "carrier": "ONE",       "vessel": "ONE Continuity","from": "guangzhou", "to": "jeddah", "box": "20", "progress": 0.03,  "totalDays": 26, "status": "origin",   "freeDays": 14, "daysInPort": 0 }
+]
