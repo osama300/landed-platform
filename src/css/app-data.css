@@ -278,3 +278,13 @@
   .sk, .bell-btn .ic, .flash-up .amt, .flash-dn .amt { animation: none !important; }
   .rt-filters { transition: none; }
 }
+
+/* With the app sidebar the results column is narrow below 1600px: filters become a horizontal bar so rows keep their single-line layout. */
+@media (min-width: 1024px) and (max-width: 1599px) {
+  .rt-layout { grid-template-columns: minmax(0, 1fr); }
+  .rt-filters { position: static; display: flex; flex-wrap: wrap; align-items: center; }
+  .rt-filters .fgroup { flex-direction: row; flex-wrap: wrap; align-items: center; gap: 6px 18px; padding: 12px 18px; }
+  .rt-filters .fgroup + .fgroup { border-top: 0; border-inline-start: 1px solid rgb(var(--c-line)); }
+  .rt-filters .fopt .n { margin-inline-start: 4px; }
+  .rt-filters > .px-4 { margin-inline-start: auto; padding: 8px 12px; }
+}
