@@ -81,7 +81,7 @@ html { scroll-behavior: smooth; }
 .lp-chip b { display: block; font-size: 13.5px; }
 .lp-chip span.t { color: rgb(var(--c-mute)); font-size: 12px; }
 .lp-chip--a { inset-block-start: -28px; inset-inline-end: 44px; }
-.lp-chip--b { inset-block-start: 132px; inset-inline-start: -26px; }
+.lp-chip--b { inset-block-start: -30px; inset-inline-start: 44px; }
 @media (max-width: 900px) { .lp-chip--b { display: none; } .lp-chip--a { inset-inline-end: 12px; } }
 
 /* orchestrated load: hero only */

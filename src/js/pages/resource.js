@@ -1,4 +1,6 @@
 import '@/css/main.css';
+import '@/css/landing.css';
+import '@/css/resource.css';
 import data from '@/data/sources.json';
 import { $, $$, onAction } from '@/js/lib/dom.js';
 import { ic } from '@/js/lib/icons.js';
@@ -40,7 +42,6 @@ function renderStatic() {
     <div class="card p-4"><div class="flex items-baseline justify-between gap-2"><b class="text-[15px]">${f.title}</b><small class="text-xs text-mute">${f.sub}</small></div>
       <ul class="mt-2.5 flex flex-col gap-1.5 text-[13.5px] text-ink-2">${f.items.map((t) => `<li class="flex gap-2">${ic('check', 'sm text-brand mt-1')}<span>${t}</span></li>`).join('')}</ul></div>`).join('');
   $('#notes').innerHTML = data.notes.map((n) => `<div class="flex gap-3.5"><span class="ico tint-brand h-10 w-10">${ic(n.icon)}</span><div><b class="block text-[15px]">${n.title}</b><p class="mt-1 text-[13.5px] leading-7 text-ink-2">${n.text}</p></div></div>`).join('');
-  $('.navlinks a[href$="resource.html"]')?.setAttribute('aria-current', 'page');
 }
 
 onAction({
@@ -50,6 +51,11 @@ onAction({
     renderGroups();
   },
 });
+
+const header = $('#site-header');
+const onScroll = () => header.classList.toggle('is-solid', window.scrollY > 40);
+window.addEventListener('scroll', onScroll, { passive: true });
+onScroll();
 
 renderStatic();
 renderFilters();

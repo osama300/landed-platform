@@ -1,0 +1,7 @@
+/* Data sources page (resource.html). The fixed site header sits over the dark hero, like the landing page. */
+.rs-hero { background: rgb(var(--c-nav)); color: #fff; padding: 112px 0 44px; }
+.rs-kick { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; font-size: 13px; font-weight: 700; color: rgb(var(--c-crane)); }
+.rs-hero h1 { max-width: 40rem; font-size: clamp(1.8rem, 3.4vw, 2.6rem); font-weight: 700; line-height: 1.25; }
+.rs-hero p { max-width: 46rem; margin-top: 16px; font-size: 16.5px; line-height: 2; color: rgb(255 255 255 / .78); }
+.rs-meta { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 20px; font-size: 13px; color: rgb(255 255 255 / .6); }
+.rs-meta span { display: inline-flex; align-items: center; gap: 6px; }

@@ -58,7 +58,7 @@ kbd { font: 600 11px ui-monospace, Menlo, monospace; padding: 1px 6px; border-ra
 /* tracking: dark map stage with floating shipment list */
 .map-dark { --c-sea: 6 24 42; --c-land: 14 44 71; --c-landLine: 27 74 106; --c-sa: 15 70 96; --c-grat: 14 40 64; --c-ink: 224 238 246; --c-mute: 130 165 186; --c-brand: 23 179 184; --c-surface: 9 32 54; --c-nav: 6 24 42; --c-line: 27 62 90; }
 .map-stage { position: relative; overflow: hidden; border-radius: 14px; background: rgb(6 24 42); box-shadow: 0 24px 60px -30px rgb(6 24 42 / .8); }
-.map-stage .map-scroll svg { min-width: 900px; }
+.map-stage .map-scroll svg { min-width: 640px; }
 .map-stage::before { content: ''; position: absolute; inset: 0; background: url('/textures/corrugated.svg') repeat; opacity: .5; pointer-events: none; }
 .map-list { position: absolute; inset-block: 14px; inset-inline-start: 14px; width: 310px; display: flex; flex-direction: column; overflow: hidden; border-radius: 12px; background: rgb(6 24 42 / .88); border: 1px solid rgb(255 255 255 / .1); backdrop-filter: blur(10px); color: #fff; }
 .map-list .clist { max-height: none; min-height: 0; flex: 1; }
